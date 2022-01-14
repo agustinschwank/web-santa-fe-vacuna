@@ -1,0 +1,130 @@
+<!--
+    ################################################
+    ################################################
+    ###           AUTOR: SCHWANK AGUSTIN         ###
+    ###              MOTIVO: ENSEÑANZA           ###
+    ###       MODELO VACUNACION SANTA FE 2021    ###
+    ################################################
+    ################################################
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="covid-19, registro vacunacion, santa fe, argentina"/>
+        <meta name="description" content="Registro de vacunacion covid-19 provincia de santa fe, republica argentina"/>
+        <meta name="robots" content="index"/>
+
+        <!-- Title Page -->
+        <title>Registro Vacunacion - Provincia de Santa Fe</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css"/>
+
+        <!-- Fontawesome 6 Icons Libraries -->
+        <link rel="stylesheet" type="text/css" href="assets/libraries/fontawesome6/css/fontawesome.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/libraries/fontawesome6/css/brands.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/libraries/fontawesome6/css/solid.css"/>
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <a href="#"><img src="./assets/img/logo-santafe-blanco.png" alt="logo" title="Santa Fe Provincia"/></a>
+            </div>
+        </header>
+        <main id="main">
+            <!-- START Label Title -->
+            <div class="title">
+                <a href="#">Registro Santa Fe Vacuna</a>
+            </div>
+            <!--END Label Title -->
+            <!-- START Register Section -->
+            <div class="register">
+                <a href="#">
+                    <div class="label_button">Ir al sitio de Santa Fe Vacuna<i class="fas fa-info-circle"></i></div>
+                </a>
+                <div class="clearfix"></div>
+                <h2>Ingreso de datos personales</h2>
+                <blockquote class="blockquote">
+                    <p>Para validar su ideantidad, debe ingresar los datos solicitados a continuacion.</p>
+                    <p>Importante: El N° de tramite que figura en el DNI debe ser el ultimo ejemplar.</p>
+                </blockquote>
+                <form id="form" action="#" method="POST" onsubmit="return false">
+                    <div class="row">
+                        <div class="input_dni">
+                            <label class="off" for="dni">DNI *</label>
+                            <input type="text" name="dni" id="dni"/>
+                        </div>
+                        <div class="input_sex">
+                            <select id="genero" name="genero">
+                                <option selected disabled>Selecciones el Sexo</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input_procedure">
+                            <label class="off" for="procedure">N° de tramite que figura en su DNI *</label>
+                            <input type="text" name="procedure" id="procedure"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card_info">
+                            <div class="card_info-title"><i class="fas fa-user"></i>Consultá el número de trámite según la versión de tu DNI. Debe ser del último ejemplar</div>
+                            <div class="card_info-content">
+                                <img src="./assets/img/version-dni.jpg" alt="demo-dni"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input_terms">
+                            <input type="checkbox" name="confirmation" id="confirmation"/>
+                            <p>
+                                Ud. ha manifestado su voluntad para aplicarse la vacuna contra el COVID 19. Cuando comience la vacunación de su grupo poblacional se le otorgará el turno correspondiente.
+                                No es necesario realizar otra gestión, cuando sea programado su turno le será comunicado oportunamente por correo electrónico.
+                                Le solicitamos que verifique regularmente su casilla de correo electrónico; incluyendo su bandeja de correos no deseados y SPAM.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input_send">
+                            <button type="submit" name="send" id="send">ENVIAR<i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- END Register Section -->
+        </main>
+        <footer id="footer">
+            <div class="center">
+                <div class="social">
+                    <p>RSS / SUSCRIPCIÓN A NOTICIAS</p>
+                    <div class="social_icons">
+                        <a title="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a title="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+                        <a title="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        <a title="LinkeDin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <img src="./assets/img/marca-footer.png" alt="logo_footer"/>
+                    <p>Atención telefónica: 0800-777-0801</p>
+                    <p>Lunes a viernes de 8 a 18 hs</p>
+                    <p>&copy; Atribución-CompartirIgual 2.5 Argentina</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SCRIPTS JS -->
+        <!-- Library JQuery 3.6.0 -->
+        <script src="./assets/js/jquery/jquery-3.6.0.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
