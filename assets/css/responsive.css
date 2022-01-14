@@ -1,0 +1,6 @@
+/* ================== SCREEN PHONES ==================== */
+@media (max-width:500px) {
+    #header {
+        justify-content: center;
+    }
+}
