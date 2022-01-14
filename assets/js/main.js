@@ -46,7 +46,6 @@ $(document).ready(function(){
         } else {
             input_check.attr('checked', false);
         }
-    })
-
+    });
 
 });
