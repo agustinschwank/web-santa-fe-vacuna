@@ -46,7 +46,19 @@ $(document).ready(function(){
         } else {
             input_check.attr('checked', false);
         }
-    })
+    });
 
 
+    /* NOTA
+    agregamos onsubmit="return false" en formulario, para realizar pruebas
+    asi logramos de realizar en jquery
+    $(fomr).submit(function(){
+        {
+            posibles validaciones
+            return(true);
+        }
+        return(false);
+    });
+    */
+   
 });

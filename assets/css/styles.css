@@ -49,10 +49,10 @@ button[type=submit] i {
 
 input[type=text], select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     color: grey;
     border: 1px solid transparent;
     transition: all 2ms;
@@ -65,7 +65,6 @@ input[type=text]:focus, select:focus{
 }
 
 .off {
-    font-size: 16px;
     position: relative;
     top:32px;
     left: 15px;
@@ -101,7 +100,8 @@ input[type=text]:focus, select:focus{
 #main{
     margin: 0 auto;
     max-width: 1100px;
-    margin-top: 120px;
+    margin-top: 110px;
+    padding: 10px;
 }
 
 /* ====== >>>>>>>>>> Label Title */
@@ -224,6 +224,10 @@ input[type=text]:focus, select:focus{
     border-top: none;
 }
 
+#form .row .card_info-content img {
+    max-width: 100%;
+}
+
 #form .row .input_terms {
     background: #ffffff;
     border: 1px solid #ccc;
@@ -291,4 +295,3 @@ input[type=text]:focus, select:focus{
 #footer .contacts img {
     margin-bottom: 10px;
 }
-
