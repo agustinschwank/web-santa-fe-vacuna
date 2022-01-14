@@ -48,4 +48,17 @@ $(document).ready(function(){
         }
     });
 
+
+    /* NOTA
+    agregamos onsubmit="return false" en formulario, para realizar pruebas
+    asi logramos de realizar en jquery
+    $(fomr).submit(function(){
+        {
+            posibles validaciones
+            return(true);
+        }
+        return(false);
+    });
+    */
+   
 });
