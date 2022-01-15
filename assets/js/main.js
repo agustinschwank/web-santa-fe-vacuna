@@ -1,39 +1,26 @@
 $(document).ready(function(){
+    'use strict'
 
     //trabajando con el formulario (NO VALIDAR FORMULARIO)
-    var dni = $('#dni');
-    var labeldni = $('label[for="dni"]');
-    var procedure = $('#procedure');
-    var labelprocedure = $('label[for="procedure"]');
+    function focus(val1, val2) {
+        val1.focus(function(){
+            val2.addClass('active');
+        });
+        val1.focusout(function(){
+            if (val1.val()!= '') {
+                val2.addClass('active');
+            } else {
+                val2.removeClass('active');
+            }
+        });
+    };
 
-    dni.focus(function(){
-        labeldni.addClass('active');
-    });
-    dni.focusout(function(){
-        if (dni.val()!= '') {
-            labeldni.addClass('active');
-        } else {
-            labeldni.removeClass('active');
-        }
-        
-    });
-    procedure.focus(function(){
-        labelprocedure.addClass('active');
-    });
-    procedure.focusout(function(){
-        if(procedure.val() != ''){
-            labelprocedure.addClass('active');
-        } else {
-            labelprocedure.removeClass('active');
-        }
-    });
+    focus($('#dni'),$('label[for="dni"]'));
+    focus($('#procedure'),$('label[for="procedure"]'));
 
     //Mostrar y ocultar explicacion version DNI
-    var info_open = $('.card_info-title');
-    var info_view = $('.card_info-content');
-
-    info_open.click(function(){
-        info_view.slideToggle(1000);
+    $('.card_info-title').click(function(){
+        $('.card_info-content').slideToggle(300);
     });
 
     //Aceptar terminos y condiciones (e)

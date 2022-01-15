@@ -8,7 +8,9 @@
 /* ================= FONTS LIBRARIES ======================= */
 @font-face {
     font-family: 'Ecode';
-    src: url(../fonts/ecode/EncodeSans-VariableFont.ttf);
+    src: url(../fonts/ecode/EncodeSans-VariableFont.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* ==================== GENERAL STYLES ===================== */
@@ -47,6 +49,10 @@ button[type=submit] i {
     margin-left: 15px;
 }
 
+select {
+    cursor: pointer;
+}
+
 input[type=text], select {
     width: 100%;
     padding: 12px;
@@ -60,8 +66,14 @@ input[type=text], select {
 
 input[type=text]:focus, select:focus{
     outline: none;
+    background: #EEF6FC;
     border: 1px solid #4570B4;
     transition: all 2ms;
+}
+
+select > option {
+    background: #ffffff;
+    
 }
 
 .off {
