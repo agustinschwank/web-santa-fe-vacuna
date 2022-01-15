@@ -2,7 +2,6 @@
     ################################################
     ################################################
     ###           AUTOR: SCHWANK AGUSTIN         ###
-    ###              MOTIVO: ENSEÑANZA           ###
     ###       MODELO VACUNACION SANTA FE 2021    ###
     ################################################
     ################################################
@@ -57,7 +56,9 @@
                     <p>Para validar su ideantidad, debe ingresar los datos solicitados a continuacion.</p>
                     <p>Importante: El N° de tramite que figura en el DNI debe ser el ultimo ejemplar.</p>
                 </blockquote>
+                <!-- START Formulario de Registro -->
                 <form id="form" action="#" method="POST" onsubmit="return false">
+                    <!-- Solicitud DNI Paciente -->
                     <div class="row">
                         <div class="input_dni">
                             <label class="off" for="dni">DNI *</label>
@@ -71,6 +72,7 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Solicitud TRAMITE DNI Paciente -->
                     <div class="row">
                         <div class="input_procedure">
                             <label class="off" for="procedure">N° de tramite que figura en su DNI *</label>
@@ -85,6 +87,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Solicitud Terminos Vacunacion Paciente -->
                     <div class="row">
                         <div class="input_terms">
                             <input type="checkbox" name="confirmation" id="confirmation"/>
@@ -101,6 +104,7 @@
                         </div>
                     </div>
                 </form>
+                <!-- END Formulario de Registro -->
             </div>
             <!-- END Register Section -->
         </main>
