@@ -8,10 +8,34 @@
 /* ================= FONTS LIBRARIES ======================= */
 @font-face {
     font-family: 'Ecode';
-    src: url(../fonts/ecode/EncodeSans-VariableFont.ttf) format('truetype');
+    src: url('../fonts/ecode/EncodeSans-VariableFont.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Doungle';
+    src: url('../fonts/doungle/Dongle-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Doungle';
+    src: url('../fonts/doungle/Dongle-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Doungle';
+    src: url('../fonts/doungle/Dongle-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
 
 /* ==================== GENERAL STYLES ===================== */
 
@@ -27,6 +51,11 @@ a {
 .clearfix {
     float: none;
     clear: both;
+}
+
+.center-master {
+    margin: 0px auto;
+    max-width: 1100px;
 }
 
 input[type=checkbox]{
@@ -101,11 +130,47 @@ select > option {
 
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 #header .logo {
     padding: 13px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.navigation ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    padding: 10px;
+    max-height: 53px;
+    line-height: 53px;
+}
+
+.navigation ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+.bars {
+    display: none;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 30px;
+    max-height: 53px;
+    line-height: 53px;
+    cursor: pointer;
 }
 
 /* ==================== MAIN ============================= */
@@ -262,6 +327,205 @@ select > option {
     margin-left: auto;
 }
 
+
+/* =========== >>>>> SECTION HOME */
+#section {
+    background-image: url('../img/SF_web-vacunacion_fondo1-1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+#section .home {
+    margin: 0px auto;
+    max-width: 1100px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#section .home_info {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#section p {
+    color: #00558c;
+    font-size: 16px;
+}
+
+#section .home_info h1 {
+    color: #ffffff;
+    font-family: 'Doungle';
+    font-size: 120px;
+    font-weight: 300;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+#section .home_buttom {
+    margin: 40px;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    background-color: #4570B4;
+    color: #ffffff;
+    cursor: pointer;
+}
+#section .home_buttom:hover {
+    box-shadow: 0px 4px 8px #000000;
+}
+
+#section .home_info h1 span {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+#section .prevencion {
+    font-size: 14px;
+}
+
+#section .prevencion .title {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+#section .prevencion ul {
+    color: #00558c;
+    margin-top: 5px;
+    padding-left: 40px;
+
+}
+
+#section .home_img {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#section .home_img img {
+    width: 100%;
+}
+
+#primera_etapa {
+    margin: 30px auto;
+    max-width: 1100px;
+    color: #00558c;
+}
+
+#primera_etapa .stikers {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#primera_etapa .stiker {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#primera_etapa .stiker p {
+    font-size: 21px;
+    text-align: center;
+}
+
+#plan {
+    margin: 0px auto;
+    max-width: 1100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+#plan .bx-wrapper {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#plan .title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #00558c;
+    margin-bottom: 15px;
+}
+
+#plan .box {
+    background-color: lightblue;
+    background-image: url('../img/objetivos-2.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 50px 100px 100px 100px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#plan .box h2 {
+    font-size: 36px;
+    color: #00558c;
+    margin-bottom: 20px;
+}
+
+#plan .box p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#preguntas {
+    margin: 0px auto;
+    max-width: 1100px;
+}
+
+#preguntas .title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #00558c;
+    margin-bottom: 15px;
+}
+
+
+#preguntas .accordion-list {
+    list-style: none;
+    cursor: pointer;
+}
+
+#preguntas .accordion-title{
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #4570B4;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#preguntas .accordion-title span {
+    color: #fc9090;
+    display: block;
+    float: right;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#preguntas .accordion-desc {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-top: none;
+    padding: 20px;
+}
 
 
 /* ==================== FOOTER ============================= */
