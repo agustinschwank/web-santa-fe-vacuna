@@ -3,7 +3,14 @@
 
 @media (max-width:1100px) {
     #header {
-        justify-content: center;
+        justify-content: space-between;
+    }
+    #section{
+        height: auto;
+    }
+    #section .home {
+        margin-left: 40px;
+        margin-right: 40px;
     }
     #form .row .input_dni {
         flex-basis: 45%;
@@ -18,7 +25,63 @@
 /* ================== SCREEN TABLE ==================== */
 @media (max-width:768px) {
     #header {
-        justify-content: right;
+        justify-content: space-between;
+    }
+    #section .home {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section .home_info {
+        flex-basis: 100%;
+    }
+    #section .home_img {
+        flex-basis: 100%;
+    }
+    #primera_etapa {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #plan .box {
+        height: 390px;
+    }
+    #primera_etapa h2 {
+        text-align: center;
+    }
+    #primera_etapa .stikers {
+        background: none;
+    }
+    #primera_etapa .stiker {
+        max-width: 100%;
+    }
+    #plan, #preguntas {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .navigation ul {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        opacity: 0.9;
+        top: 73px;
+        margin: 20px;
+        left: 0px;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .navigation ul li {
+        float: none;
+        padding: 10px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .navigation ul li a {
+        display: block;
+        color: #4570B4;
+        font-size: 18px;
+        text-align: center;
+    }
+    .bars {
+        display: block;
     }
     #form .row .input_dni {
         flex-basis: 100%;
@@ -33,7 +96,7 @@
 /* ================== SCREEN PHONES ==================== */
 @media (max-width:576px) {
     #header {
-        justify-content: center;
+        justify-content: space-between;
     }
     #form .row .input_dni {
         flex-basis: 100%;

@@ -1,6 +1,14 @@
 $(document).ready(function(){
     'use strict'
 
+    // Menu de Navegacion
+    var ul = $('#menu ul');
+    var bars = $('.bars i');
+    $('.bars').click(function(){
+        ul.slideToggle(100);
+        bars.toggleClass('fa-times');
+    });
+
     //trabajando con el formulario (NO VALIDAR FORMULARIO)
     function focus(val1, val2) {
         val1.focus(function(){
@@ -33,6 +41,14 @@ $(document).ready(function(){
         } else {
             input_check.attr('checked', false);
         }
+    });
+
+
+    // Agregamos un SLider
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: false,
+        pager: false,
     });
 
 
