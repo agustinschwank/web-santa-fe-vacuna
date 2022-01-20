@@ -4,7 +4,7 @@ $(document).ready(function(){
     // Menu de Navegacion
     var ul = $('#menu ul');
     var bars = $('.bars i');
-    $('.bars').click(function(){
+    bars.click(function(){
         ul.slideToggle(100);
         bars.toggleClass('fa-times');
     });
@@ -63,5 +63,4 @@ $(document).ready(function(){
         return(false);
     });
     */
-   
 });

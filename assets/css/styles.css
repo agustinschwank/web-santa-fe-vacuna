@@ -466,9 +466,10 @@ select > option {
     background-color: lightblue;
     background-image: url('../img/objetivos-2.png');
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: 90%;
+    background-position-y: center;
     padding: 50px 100px 100px 100px;
-    height: 150px;
+    height: calc((50px*2) + 150px);
     border-radius: 15px;
 }
 
@@ -509,6 +510,7 @@ select > option {
     color: #ffffff;
     font-size: 24px;
     font-weight: 600;
+    border-bottom: 1px solid #EEF6FC;
 }
 
 #preguntas .accordion-title span {
@@ -526,7 +528,6 @@ select > option {
     border-top: none;
     padding: 20px;
 }
-
 
 /* ==================== FOOTER ============================= */
 #footer {
